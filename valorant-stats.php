@@ -49,7 +49,7 @@ switch ($request)
         // Valortant stat calls
         $rank = $base['data']['segments'][0]['stats']['rank']['value'];
 
-        echo $rank . " (" . urldecode($riotid) . ")";
+        echo $rank . " yakma kahssek zeb";
     break;
     case "time":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/' . $player . '%23' . $tag);
