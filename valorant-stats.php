@@ -46,8 +46,9 @@ switch ($request)
     case "rank":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
-        // Valortant stat calls
-        $rank = $base['data']['segments'][0]['stats']['rank']['value'];
+        // {"data":{"platformInfo":{"platformSlug":"riot","platformUserId":"31219320-c9a5-4c66-a777-e0907d35ae77","platformUserHandle":"Mathematicien#1687","platformUserIdentifier":"Mathematicien#1687","avatarUrl":"https://titles.trackercdn.com/valorant-api/playercards/a80d8898-464d-1b63-4b1b-149930c22b6b/displayicon.png","additionalParameters":null},"userInfo":{"userId":null,"isPremium":false,"isVerified":false,"isInfluencer":false,"isPartner":false,"countryCode":null,"customAvatarUrl":null,"customHeroUrl":null,"socialAccounts":[],"pageviews":497,"isSuspicious":null},"metadata":{"schema":"riot-api","privacy":"public","defaultPlaylist":"competitive"},"segments":[{"type":"playlist","attributes":{"key":"competitive","playlist":"competitive"},"metadata":{"name":"Competitive"},"expiryDate":"0001-01-01T00:00:00+00:00","stats":{"timePlayed":{"rank":null,"percentile":null,"displayName":"Time Played","displayCategory":"Combat","category":"combat","metadata":{},"value":1696667832,"displayValue":"19d 15h 17m","displayType":"TimeMilliseconds"}
+        // new = {"rank":17283,"percentile":null,"displayName":"Rating","displayCategory":null,"category":"mmr","metadata":{"iconUrl":"https://trackercdn.com/cdn/tracker.gg/valorant/icons/tiers/19.png","tierName":"Diamond 2"}
+        $rank = $base['data']['segments'][0]['mmr']['tierName']['value'];
 
         echo $rank . " yakma kahssek zeb";
     break;
