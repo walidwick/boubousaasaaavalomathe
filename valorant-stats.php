@@ -51,7 +51,7 @@ switch ($request)
         $rank = $base['data']['segments'][0]['rank']['metadata']['tierName'];
         $top = $base['data']['segments'][0]['rank']['rank']['value']
 
-        echo $rank . "#" .$top. "." ;
+        echo .$rank. "#" .$top. "." ;
     break;
     case "time":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/' . $player . '%23' . $tag);
