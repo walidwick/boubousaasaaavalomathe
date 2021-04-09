@@ -47,11 +47,14 @@ switch ($request)
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         //$top = $base['data']['segments'][0]['stats']['rank']['rank']
+        //$RR = $base['data']['segments'][0]['stats']['rank']['value'];
         $top = $base['data']['segments'][0]['stats']['rank']['rank'];
+        
+        $RR = $base['data']['segments'][0]['stats']['rank']['value'];
         
         $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
 
-        echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . "." ;
+        echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . "-" . $RR ."RR" ;
     break;
     case "time":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/' . $player . '%23' . $tag);
