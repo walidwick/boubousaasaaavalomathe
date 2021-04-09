@@ -47,7 +47,7 @@ switch ($request)
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         //$top = $base['data']['segments'][0]['rank']['rank']['value']
-        $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName']['value'];
+        $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
 
         echo $rank . "." ;
     break;
