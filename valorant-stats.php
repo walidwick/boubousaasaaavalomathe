@@ -53,8 +53,8 @@ switch ($request)
         $RR = $base['data']['segments'][0]['stats']['rank']['value'];
         
         $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
-
-        echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
+        //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
+        echo "Rank Dial Mathe Daba : " . $rank . "." ;
     break;
     case "time":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/' . $player . '%23' . $tag);
