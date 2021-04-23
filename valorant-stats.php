@@ -55,7 +55,8 @@ switch ($request)
         
         $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
-        echo "Rank Dial Mathe Daba : " . $rank . "." ;
+        //echo "Rank Dial Mathe Daba : " . $rank . "." ;
+        echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
     break;
     case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
