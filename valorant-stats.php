@@ -43,6 +43,7 @@ switch ($request)
 
         echo "Time Played: " . timeSeconds($timeplayed) . " | Wins: " . $wins . " | Win/Loss: " . $winr . "% | Kills: " . $kills . " | Most Kills in Game: " . $mKills . " | KDR: " . round($kdr) . " | Deaths: " . $deaths ." (" . urldecode($riotid) . ")";
     break;
+    // tal gheda
     case "rank":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
@@ -55,6 +56,41 @@ switch ($request)
         $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         echo "Rank Dial Mathe Daba : " . $rank . "." ;
+    break;
+    case "mostkills":
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+
+        //$top = $base['data']['segments'][0]['stats']
+
+        $aw3arkills = $base['data']['segments'][0]['stats']['mostKillsInMatch']['value'];
+        
+        
+        echo "Aktar kills jab mathe f chi game : " . $aw3arkills . " (competitive data)" ;
+    break;
+    case "wins":
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+
+        $winers2005 = $base['data']['segments'][0]['stats']['matchesWon']['value'];
+        
+        
+        //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
+        echo "Ha mathe ch7al jayb mn win f comptetive : " . $winers2005 . " ." ;
+    break;
+    case "aces":
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+
+        $aces = $base['data']['segments'][0]['stats']['aces']['value'];
+        
+        
+        echo "Mathe jab f comptetive : " . $aces . " aces" ;
+    break;
+    case "clutches":
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+
+        $clutches = $base['data']['segments'][0]['stats']['clutches']['value'];
+        
+        
+        echo "Mathe jab f comptetive : " . $clutches . " clutches" ;
     break;
     case "time":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/' . $player . '%23' . $tag);
@@ -76,5 +112,5 @@ switch ($request)
         echo "Total Time Played: " . $days.'d '.$hours.'h '.$minutes.'m ' .$seconds.'s '. " (" . urldecode($riotid) . ")";
     break;
     default:
-        echo "need to add &command=stats, &command=rank, or &command=time";
+        echo "ask walid mnach l mochkil";
 }
