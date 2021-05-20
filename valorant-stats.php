@@ -58,7 +58,15 @@ switch ($request)
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
         echo "Rank Dial Mathe Daba : " . $rank . " / Tier : " . $tier . " / Elo : " . $elo ."." ;
     break;
-    case "mostkills":
+    case "lastgame":
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/1687');
+
+        $lg = $base['data']['mmr_change_to_last_game'];
+        
+        
+        echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
+    break;
+        case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         //$top = $base['data']['segments'][0]['stats']
