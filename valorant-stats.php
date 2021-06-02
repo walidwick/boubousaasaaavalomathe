@@ -53,7 +53,7 @@ switch ($request)
         $RR = $base['data']['segments'][0]['stats']['rank']['value'];
         //$rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
         $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
-        $top = $base['data']['segments'][0]['stats']['rank']['rank']
+        $top = $base['data']['segments'][0]['stats']['rank']['rank'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
         echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
