@@ -60,6 +60,15 @@ switch ($request)
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
         echo "Rank Dial Mathe Daba : " . $rank . " / Tier : " . $tier . " / Elo : " . $elo ."";
     break;
+    case "rankbazouya":
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/XXXX/XXXX');
+        
+        $elo = $base['data']['elo'];
+        $tier = $base['data']['ranking_in_tier'];
+
+        $rank = $base['data']['currenttierpatched'];
+    echo "▽ Rank : " . $rank . " ▽ Tier : " . $tier . " ▽ Elo : " . $elo ."";
+    break;
     case "lastgame":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/1687');
 
