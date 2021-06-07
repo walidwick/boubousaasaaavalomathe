@@ -9,18 +9,6 @@ if (!$request)
     return;
 };
 
-$player = $_GET['nick'];
-if (!$player)
-{
-    echo '\'&nick=\' parameter not defined!';
-    return;
-};
-$tag = $_GET['tag'];
-if (!$tag)
-{
-    echo '\'&tag=\' parameter not defined!';
-    return;
-};
 
 // combine the player name with tag numnber i.e: rehkloos#001
 $riotid = $player . '%23' . $tag;
