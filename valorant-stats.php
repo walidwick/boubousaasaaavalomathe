@@ -10,7 +10,6 @@ if (!$request)
 };
 
 
-// combine the player name with tag numnber i.e: rehkloos#001
 $riotid = $player . '%23' . $tag;
 
 switch ($request)
