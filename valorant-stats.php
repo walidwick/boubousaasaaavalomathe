@@ -60,10 +60,9 @@ switch ($request)
     case "rankrizkou":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/ety%20rizk/god');
         
-        $elo = $base['data']['elo'];
         $tier = $base['data']['ranking_in_tier'];
-
         $rank = $base['data']['currenttierpatched'];
+        
     echo "Current Rank : " . $rank . " -Tier : " . $tier . "";
     break;
     case "rankbazouya":
