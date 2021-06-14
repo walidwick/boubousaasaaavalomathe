@@ -58,12 +58,12 @@ switch ($request)
     echo "Rank : " . $rank . " | Tier : " . $tier . " | Elo : " . $elo ."";
     break;
     case "rankrizkou":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/ety%20rizk/god');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/rizk/god');
         
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
         
-    echo "Current Rank : " . $rank . " / Tier : " . $tier . "";
+    echo "Main account Rank : " . $rank . " / Tier : " . $tier . "";
     break;
     case "ranksmurf":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Ninja1di1Milano/euw');
