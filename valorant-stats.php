@@ -34,19 +34,20 @@ switch ($request)
     // tal gheda
     case "rank":
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/1687');
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
         $base2 = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         //$top = $base['data']['segments'][0]['stats']['rank']['rank']
         //$RR = $base['data']['segments'][0]['stats']['rank']['value'];
+        $RR = $base['data']['segments'][0]['stats']['rank']['value'];
         $elo = $base['data']['elo'];
         $tier = $base['data']['ranking_in_tier'];
         //$rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
-        $rank = $base['data']['currenttierpatched'];
+        $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
         $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
-        echo "Rank Dial Mathe Daba : " . $rank . " / Tier : " . $tier . " / Elo : " . $elo ." / Top : " . $top ." EU";
+        echo "" . $rank . " " . $RR . "RR (#" . $top ." EU)" ;
     break;
     case "rankbouazaoui":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/euw');
