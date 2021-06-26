@@ -56,7 +56,7 @@ switch ($request)
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
         
-    echo "Rank dial smurf : " . $rank . " / Tier : " . $tier . "";
+    echo "" . $rank . " [Tier : " . $tier . "]";
     break;
     case "rankbazouya":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouya/baz');
