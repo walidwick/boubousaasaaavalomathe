@@ -27,11 +27,11 @@ switch ($request)
         $elo = $base['data']['elo'];
         $tier = $base['data']['ranking_in_tier'];
         //$rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
-        $rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
+        $rank = $base['data']['currenttierpatched'];
         $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
-        echo "sber 3la krek rani kan 9ad fiha ";
+        echo "Rank : " . $rank . " Tier :" .$tier. " (Elo : ".$elo. ")";
     break;
     case "rankbouazaoui":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/euw');
