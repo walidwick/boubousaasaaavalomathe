@@ -90,7 +90,7 @@ switch ($request)
         $lg = $base['data']['mmr_change_to_last_game'];
         
         //echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
-        echo "ask chi wa7d f chat a khay ma39elch achno dar Kappa" ;
+        echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
     break;
         case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
