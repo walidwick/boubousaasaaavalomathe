@@ -44,6 +44,13 @@ switch ($request)
         $rank = $base['data']['currenttierpatched'];
     echo "" . $rank . " | Tier : " . $tier . " | Elo : " . $elo ."";
     break;
+    case "timeplayed":
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+        
+        $timep = $base['data']['segments'][0]['stats']['timePlayed']['displayValue'];
+
+    echo "Valorant total time played : " . $timep . "";
+    break;
     case "rankrizkou":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/rizk/god');
         
