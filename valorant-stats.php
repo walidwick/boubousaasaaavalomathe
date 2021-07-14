@@ -67,6 +67,14 @@ switch ($request)
         
     echo "" . $rank . " tier : " . $tier . "";
     break;
+    case "rankera":
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/eraroxeur/euw');
+        
+        $tier = $base['data']['ranking_in_tier'];
+        $rank = $base['data']['currenttierpatched'];
+        
+    echo "" . $rank . " | " . $tier . "/100";
+    break;
     case "ranksmurf":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Ninja1di1Milano/euw');
         
