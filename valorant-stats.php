@@ -34,7 +34,7 @@ switch ($request)
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
         //echo "" . $rank . " | " . $tier . "/100 (Elo : " . $elo .")" ;
         //echo "" . $rank . " " . $tier . "RR | #" . $top ." EU" ;
-        echo "" . $rank . " " . $RR . "RR | #" . $top ." EU" ;
+        echo "" . $rank . " " . $tier . "RR | #" . $top ." EU" ;
     break;
     case "rankbouazaoui":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/euw');
