@@ -38,12 +38,9 @@ switch ($request)
     break;
     case "minirank":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
-        
-        $elo = $base['data']['elo'];
-        $tier = $base['data']['ranking_in_tier'];
 
         $rank = $base['data']['currenttierpatched'];
-    echo "" . $rank . "";
+    echo "" . $rank . ".";
     break;
     case "rankbouazaoui":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/euw');
