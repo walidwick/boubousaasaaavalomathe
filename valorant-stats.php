@@ -40,7 +40,7 @@ switch ($request)
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
 
         $rank = $base['data']['currenttierpatched'];
-    echo "" . $rank . ".";
+    echo "" . $rank . ". Subscribe for details :D";
     break;
     case "rankbouazaoui":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/euw');
