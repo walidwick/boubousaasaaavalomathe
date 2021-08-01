@@ -28,7 +28,7 @@ switch ($request)
         $tier = $base['data']['ranking_in_tier'];
         //$rank = $base['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
         //$rank = $base['data']['currenttierpatched'];
-        $rank = $base2['data']['segments'][0]['stats']['rank']['metadata']['tierName'];
+        $rank = $base['data']['currenttierpatched'];
         $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
