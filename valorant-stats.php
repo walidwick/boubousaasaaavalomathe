@@ -42,14 +42,17 @@ switch ($request)
         $rank = $base['data']['currenttierpatched'];
     echo "" . $rank . ". Subscribe for details ;)";
     break;
-    case "rankbouazaoui":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/euw');
+    case "bazouya":
+        $challenge = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/ABRAMI%20SAL3OS/BAZ');
+        $main = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/EUW');
         
-        $elo = $base['data']['elo'];
-        $tier = $base['data']['ranking_in_tier'];
-
-        $rank = $base['data']['currenttierpatched'];
-    echo "" . $rank . " | Tier : " . $tier . " | Elo : " . $elo ."";
+        $challengerank = $challenge['data']['currenttierpatched'];
+        $challengetier = $challenge['data']['ranking_in_tier'];
+        
+        $mainrank = $main['data']['currenttierpatched'];
+        $maintier = $main['data']['ranking_in_tier'];
+        
+    echo "Main :  " . $challengerank . " " . $challengetier . "/100 | Challenge : " . $challengerank . " " . $challengetier . "/100";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -73,24 +76,6 @@ switch ($request)
         $rank = $base['data']['currenttierpatched'];
         
     echo "" . $rank . " [Tier : " . $tier . "]";
-    break;
-    case "rankbazouya":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouya/baz');
-        
-        $elo = $base['data']['elo'];
-        $tier = $base['data']['ranking_in_tier'];
-
-        $rank = $base['data']['currenttierpatched'];
-    echo "" . $rank . " | Tier : " . $tier . " | Elo : " . $elo ."";
-    break;
-    case "rankbazouzou":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouzou/baz');
-        
-        $elo = $base['data']['elo'];
-        $tier = $base['data']['ranking_in_tier'];
-
-        $rank = $base['data']['currenttierpatched'];
-    echo "" . $rank . " | Tier : " . $tier . " | Elo : " . $elo ."";
     break;
     case "lastgame":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/1687');
