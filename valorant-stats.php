@@ -52,7 +52,7 @@ switch ($request)
         $mainrank = $main['data']['currenttierpatched'];
         $maintier = $main['data']['ranking_in_tier'];
         
-    echo "Main :  " . $challengerank . " " . $challengetier . "/100 | Challenge : " . $challengerank . " " . $challengetier . "/100";
+    echo "Main :  " . $mainrank . " " . $maintier . "/100 | Challenge : " . $challengerank . " " . $challengetier . "/100";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
