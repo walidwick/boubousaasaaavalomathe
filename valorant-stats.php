@@ -85,6 +85,13 @@ switch ($request)
         //echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
         echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
     break;
+    case "cypher":
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+
+        $cyphertimeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
+
+        echo "time played b cypher : " ;
+    break;
         case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
@@ -121,14 +128,6 @@ switch ($request)
         echo "Mathe jab f comptetive : " . $clutches . " clutches" ;
     break;
 // AGENTS STATS
-    case "Cypher":
-        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-
-        $cyphertimeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
-        
-        
-        echo "time played b cypher : " ;
-    break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
 }
