@@ -127,10 +127,10 @@ switch ($request)
     case "Cypher":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
-        $clutches = $base['data']['segments'][2]['stats']['timePlayed']['displayValue'];
+        $cyphertimeplayed = $base['data']['segments'][1]['stats']['timePlayed']['displayValue'];
         
         
-        echo "time played b cypher : " . $clutches . " " ;
+        echo "time played b cypher : " . $cyphertimeplayed . " " ;
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
