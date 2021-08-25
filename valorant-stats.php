@@ -85,20 +85,6 @@ switch ($request)
         //echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
         echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
     break;
-        // AGENTS STATS
-        
-        
-        
-    case "cypher":
-        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-
-        $matchesplayed = $base['data']['segments'][7]['stats']['matchesPlayed']['displayValue'];
-        $matcheswon = $base['data']['segments'][7]['stats']['matchesWon']['displayValue'];
-        $matcheslose = $base['data']['segments'][7]['stats']['matchesLost']['displayValue'];
-        $timeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
-
-        echo "Matches Played : " . $matchesplayed . " (". $matcheswon ." W-". $matcheslose ."L). ";
-    break;
         case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
