@@ -129,7 +129,7 @@ switch ($request)
         $matchesplayed = $base['data']['segments'][7]['stats']['matchesPlayed']['displayValue'];
         $matcheswon = $base['data']['segments'][7]['stats']['matchesWon']['displayValue'];
         $matcheslose = $base['data']['segments'][7]['stats']['matchesLost']['displayValue'];
-        $win% = $base['data']['segments'][7]['stats']['matchesWinPct']['displayValue'];
+        $win = $base['data']['segments'][7]['stats']['matchesWinPct']['displayValue'];
         
         $kills = $base['data']['segments'][7]['stats']['kills']['displayValue'];
         $HS = $base['data']['segments'][7]['stats']['headshots']['displayValue'];
@@ -139,7 +139,7 @@ switch ($request)
         $aces = $base['data']['segments'][7]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ." W-". $matcheslose ."L) Win% : ". $win% . "] | Total Kills : ". $kills . " ( " . $HS . "HS ), First Bloods : ". $firstBloods ." (". $firstBloodspermatch . "per match) | Clutches : " . $clutches . ". Aces : " . $aces . " ";
+        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ." W-". $matcheslose ."L) Win% : ". $win . "] | Total Kills : ". $kills . " ( " . $HS . "HS ), First Bloods : ". $firstBloods ." (". $firstBloodspermatch . "per match) | Clutches : " . $clutches . ". Aces : " . $aces . " ";
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
