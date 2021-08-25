@@ -90,7 +90,7 @@ switch ($request)
 
         $cyphertimeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
 
-        echo "time played b cypher : " ;
+        echo "time played b cypher : " . $cyphertimeplayed . "";
     break;
         case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
