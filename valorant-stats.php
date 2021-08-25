@@ -127,7 +127,7 @@ switch ($request)
         $cyphertimeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
         
         
-        echo "time played b cypher : " . $cyphertimeplayed . " " ;
+        echo "time played b cypher : " ;
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
