@@ -133,5 +133,5 @@ switch ($request)
         echo "time played b cypher : " . $clutches . " " ;
     break;
     default:
-        echo "fin ghadi a dak rass l 9alwa xD";
+        echo "fin ghadi a dak rass l 9alwa xDD";
 }
