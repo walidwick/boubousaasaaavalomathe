@@ -121,13 +121,10 @@ switch ($request)
         echo "Mathe jab f comptetive : " . $clutches . " clutches" ;
     break;
 // AGENTS STATS
-        
-        
-        
     case "Cypher":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
-        $cyphertimeplayed = $base['data']['segments'][1]['stats']['timePlayed']['displayValue'];
+        $cyphertimeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
         
         
         echo "time played b cypher : " . $cyphertimeplayed . " " ;
