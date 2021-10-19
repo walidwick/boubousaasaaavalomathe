@@ -43,16 +43,12 @@ switch ($request)
     echo "" . $rank . ". Subscribe for details ;)";
     break;
     case "bazouya":
-        $challenge = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/ABRAMI%20SAL3OS/BAZ');
-        $main = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bouazaoui/EUW');
-        
-        $challengerank = $challenge['data']['currenttierpatched'];
-        $challengetier = $challenge['data']['ranking_in_tier'];
-        
+        $main = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouya/baz');
+
         $mainrank = $main['data']['currenttierpatched'];
         $maintier = $main['data']['ranking_in_tier'];
         
-    echo "Main :  " . $mainrank . ", " . $maintier . "/100 | Challenge : " . $challengerank . ", " . $challengetier . "/100";
+    echo "Rank: " . $mainrank . ", " . $maintier . "/100 ";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
