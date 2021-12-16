@@ -34,7 +34,7 @@ switch ($request)
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
         $srank = $base3['data']['currenttierpatched'];
-        $sRR = $base3['data']['segments'][0]['stats']['rank']['value'];
+        $sRR = $base3['data']['ranking_in_tier'];
         //echo "" . $rank . " | " . $tier . "/100 (Elo : " . $elo .")" ;
         //echo "" . $rank . " " . $tier . "RR | #" . $top ." EU" ;
         echo "" . $rank . " " . $tier . "RR | #" . $top ." EU | Smurf: ".$srank. ", ".$sRR. "RR" ;
