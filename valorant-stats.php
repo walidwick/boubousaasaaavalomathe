@@ -44,7 +44,7 @@ switch ($request)
         $base3 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/frax');
         $rank = $base['data']['currenttierpatched'];
         $srank = $base3['data']['currenttierpatched'];
-    echo "Main: " . $rank . "Smurf: ".$srank.". Subscribe for details ;)";
+    echo "Main: " . $rank . " - Smurf: ".$srank.". Subscribe for details ;)";
     break;
     case "bazouya":
         $main = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouya/baz');
