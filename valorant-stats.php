@@ -37,14 +37,14 @@ switch ($request)
         $sRR = $base3['data']['ranking_in_tier'];
         //echo "" . $rank . " | " . $tier . "/100 (Elo : " . $elo .")" ;
         //echo "" . $rank . " " . $tier . "RR | #" . $top ." EU" ;
-        echo "" . $rank . " " . $tier . "RR | #" . $top ." EU | Smurf: ".$srank. ", ".$sRR. "RR" ;
+        echo "" . $rank . " " . $tier . "RR | #" . $top ." EU | Smurf: ".$srank. " ".$sRR. "RR" ;
     break;
     case "minirank":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
         $base3 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/frax');
         $rank = $base['data']['currenttierpatched'];
         $srank = $base3['data']['currenttierpatched'];
-    echo "Main: " . $rank . " - Smurf: ".$srank.". Subscribe for details ;)";
+    echo "Main: " . $rank . " | Smurf: ".$srank.". Subscribe for details ;)";
     break;
     case "bazouya":
         $main = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouya/baz');
