@@ -18,7 +18,7 @@ switch ($request)
     // tal gheda
     case "rank":
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
         $base2 = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         //$top = $base['data']['segments'][0]['stats']['rank']['rank']
