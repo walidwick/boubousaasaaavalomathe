@@ -20,7 +20,6 @@ switch ($request)
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
         $base2 = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-        $base3 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/frax');
 
         //$top = $base['data']['segments'][0]['stats']['rank']['rank']
         //$RR = $base['data']['segments'][0]['stats']['rank']['value'];
@@ -33,26 +32,16 @@ switch ($request)
         $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
         //echo "Rank Dial Mathe Daba : " . $rank . " #" . $top . " - " . $RR ."RR" ;
         //echo "Rank Dial Mathe Daba : " . $rank . "." ;
-        $srank = $base3['data']['currenttierpatched'];
-        $sRR = $base3['data']['ranking_in_tier'];
         //echo "" . $rank . " | " . $tier . "/100 (Elo : " . $elo .")" ;
         //echo "" . $rank . " " . $tier . "RR | #" . $top ." EU" ;
-        echo "" . $rank . " " . $tier . "RR | #" . $top ." EU | Smurf: ".$srank. " ".$sRR. "RR" ;
+        echo "" . $rank . " " . $tier . "RR | #" . $top ." EU ";
     break;
     case "minirank":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
         $base3 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/frax');
         $rank = $base['data']['currenttierpatched'];
         $srank = $base3['data']['currenttierpatched'];
-    echo "Main: " . $rank . " | Smurf: ".$srank.". Subscribe for details ;)";
-    break;
-    case "bazouya":
-        $main = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bazouya/baz');
-
-        $mainrank = $main['data']['currenttierpatched'];
-        $maintier = $main['data']['ranking_in_tier'];
-        
-    echo "Rank: " . $mainrank . ", " . $maintier . "/100 ";
+    echo "Rank: " . $rank . ". Subscribe for details ;)";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -63,14 +52,6 @@ switch ($request)
     break;
     case "rankrizkou":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/rizk/god');
-        
-        $tier = $base['data']['ranking_in_tier'];
-        $rank = $base['data']['currenttierpatched'];
-        
-    echo "Main account Rank : " . $rank . " / Tier : " . $tier . "";
-    break;
-    case "bigboi":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/bigboiii404/big');
         
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
