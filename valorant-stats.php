@@ -39,7 +39,7 @@ switch ($request)
         
         $timep = $base['data']['segments'][0]['stats']['timePlayed']['displayValue'];
 
-    echo "Valorant total time played : " . $timep . "";
+    echo "Valorant total time played: " . $timep . "";
     break;
     case "rankrizkou":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/rizk/god');
@@ -47,7 +47,7 @@ switch ($request)
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
         
-    echo "Main account Rank : " . $rank . " / Tier : " . $tier . "";
+    echo "Main account Rank: " . $rank . " / Tier: " . $tier . "";
     break;
     case "ranksmurf":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Ninja1di1Milano/euw');
@@ -55,15 +55,15 @@ switch ($request)
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
         
-    echo "" . $rank . " [Tier : " . $tier . "]";
+    echo "" . $rank . " [Tier: " . $tier . "]";
     break;
     case "lastgame":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/1687');
 
         $lg = $base['data']['mmr_change_to_last_game'];
         
-        //echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
-        echo "Ha ch7al zadoh ola ne9soh f lastgame : " . $lg . "" ;
+        //echo "Ha ch7al zadoh ola ne9soh f lastgame: " . $lg . "" ;
+        echo "Ha ch7al zadoh ola ne9soh f lastgame: " . $lg . "" ;
     break;
         case "mostkills":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -73,7 +73,7 @@ switch ($request)
         $aw3arkills = $base['data']['segments'][0]['stats']['mostKillsInMatch']['value'];
         
         
-        echo "Aktar kills jab mathe f chi game : " . $aw3arkills . " (competitive data)" ;
+        echo "Aktar kills jab mathe f chi game: " . $aw3arkills . " (competitive data)" ;
     break;
     case "wins":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -81,7 +81,7 @@ switch ($request)
         $winers2005 = $base['data']['segments'][0]['stats']['matchesWon']['value'];
         
        
-        echo "Ha mathe ch7al jayb mn win f comptetive : " . $winers2005 . " ." ;
+        echo "Ha mathe ch7al jayb mn win f comptetive: " . $winers2005 . " ." ;
     break;
     case "aces":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -89,7 +89,7 @@ switch ($request)
         $aces = $base['data']['segments'][0]['stats']['aces']['value'];
         
         
-        echo "Mathe jab f comptetive : " . $aces . " aces" ;
+        echo "Mathe jab f comptetive: " . $aces . " aces" ;
     break;
     case "clutches":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -97,7 +97,7 @@ switch ($request)
         $clutches = $base['data']['segments'][0]['stats']['clutches']['value'];
         
         
-        echo "Mathe jab f comptetive : " . $clutches . " clutches" ;
+        echo "Mathe jab f comptetive: " . $clutches . " clutches" ;
     break;
         // AGENTS STATS
         
@@ -119,7 +119,7 @@ switch ($request)
         $aces = $base['data']['segments'][7]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "killjoy":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -137,7 +137,7 @@ switch ($request)
         $aces = $base['data']['segments'][8]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][8]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "chamber":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -171,7 +171,7 @@ switch ($request)
         $aces = $base['data']['segments'][10]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][10]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "astra":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -189,7 +189,7 @@ switch ($request)
         $aces = $base['data']['segments'][11]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][11]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "sage":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -207,7 +207,7 @@ switch ($request)
         $aces = $base['data']['segments'][12]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][12]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "breach":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -225,7 +225,7 @@ switch ($request)
         $aces = $base['data']['segments'][13]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][13]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "kayo":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -243,7 +243,7 @@ switch ($request)
         $aces = $base['data']['segments'][14]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][14]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "skye":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -261,7 +261,7 @@ switch ($request)
         $aces = $base['data']['segments'][15]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][15]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "viper":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -279,7 +279,7 @@ switch ($request)
         $aces = $base['data']['segments'][16]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][16]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "yoru":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -297,7 +297,7 @@ switch ($request)
         $aces = $base['data']['segments'][17]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][17]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "omen":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -315,7 +315,7 @@ switch ($request)
         $aces = $base['data']['segments'][18]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][18]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "brimstone":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -333,7 +333,7 @@ switch ($request)
         $aces = $base['data']['segments'][19]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][19]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "reyna":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -351,7 +351,7 @@ switch ($request)
         $aces = $base['data']['segments'][20]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][20]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "jett":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -369,7 +369,7 @@ switch ($request)
         $aces = $base['data']['segments'][21]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][21]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "phoenix":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -387,7 +387,7 @@ switch ($request)
         $aces = $base['data']['segments'][22]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][22]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     case "raze":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
@@ -405,7 +405,7 @@ switch ($request)
         $aces = $base['data']['segments'][23]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][23]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
+        echo "Time Played: ". $timeplayed . " | Matches Played: " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win%: ". $win . "] | Total Kills: ". $kills . " (" . $HS . " HS) | First Bloods: ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches: " . $clutches . " |  Aces: " . $aces . " ";
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
