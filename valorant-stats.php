@@ -301,7 +301,7 @@ switch ($request)
 
         echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
     break;
-    case "reyna":
+    case "brimstone":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         $matchesplayed = $base['data']['segments'][19]['stats']['matchesPlayed']['displayValue'];
@@ -319,7 +319,7 @@ switch ($request)
 
         echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
     break;
-    case "jett":
+    case "reyna":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         $matchesplayed = $base['data']['segments'][20]['stats']['matchesPlayed']['displayValue'];
@@ -337,7 +337,7 @@ switch ($request)
 
         echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
     break;
-    case "phoenix":
+    case "jett":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         $matchesplayed = $base['data']['segments'][21]['stats']['matchesPlayed']['displayValue'];
@@ -355,7 +355,7 @@ switch ($request)
 
         echo "Time Played : ". $timeplayed . " | Matches Played : " . $matchesplayed . " [(". $matcheswon ."W-". $matcheslose ."L), Win% : ". $win . "] | Total Kills : ". $kills . " (" . $HS . " HS) | First Bloods : ". $firstBloods ." (". $firstBloodspermatch . " per match) | Clutches : " . $clutches . " |  Aces : " . $aces . " ";
     break;
-    case "raze":
+    case "phoenix":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         $matchesplayed = $base['data']['segments'][22]['stats']['matchesPlayed']['displayValue'];
