@@ -412,8 +412,13 @@ switch ($request)
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
         $gamemode = $base['data'][1]['metadata']['mode'];
         $server = $base['data'][1]['metadata']['cluster'];
+        $player1name = $base['data'][1]['players']['red'][0]['name'];
+        $player1tag = $base['data'][1]['players']['red'][0]['tag'];
+        $player1character = $base['data'][1]['players']['red'][0]['character'];
+        $player1rank = $base['data'][1]['players']['red'][0]['currenttier_patched'];
         
-        echo "Gamemode: ". $gamemode .". Server: ". $server . " tanzid";
+        
+        echo "Gamemode: ". $gamemode .". Server: ". $server . ". Red Team Players: ".$player1name."#".$player1tag." playing ".$player1character. "and his rank is ".$player1rank. " .";
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
