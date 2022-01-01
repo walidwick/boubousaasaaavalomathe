@@ -420,7 +420,7 @@ switch ($request)
         $player1deaths = $base['data'][1]['players']['red'][0]['stats']['deaths'];
         $player1assists = $base['data'][1]['players']['red'][0]['stats']['assists'];
         
-        echo "Gamemode: ". $gamemode .". Server: ". $server . ". Red Team Players: ".$player1name."#".$player1tag." playing ".$player1character. ". Rank: ".$player1rank. ". Score: ".$player1kills."/".$player1deaths."/".$player1assists.".";
+        echo "Gamemode: ". $gamemode .". Server: ". $server . ". Red Team Players: ".$player1name."#".$player1tag."| Character ".$player1character. "| Rank: ".$player1rank. "| Score: ".$player1kills."/".$player1deaths."/".$player1assists.".";
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
