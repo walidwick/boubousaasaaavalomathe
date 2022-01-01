@@ -407,12 +407,6 @@ switch ($request)
 
         echo "Time Played: ". $timeplayed. " | Matches Played: ". $matchesplayed. " [(". $matcheswon."W-". $matcheslose."L), Win%: ". $win. "] | Total Kills: ". $kills. " (". $HS. " HS) | First Bloods: ". $firstBloods." (". $firstBloodspermatch. " per match) | Clutches: ". $clutches. " |  Aces: ". $aces. " ";
     break;
-        //lastmatch test
-    case "teammates"
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
-        $gamemode = $base['data']['segments'][1]['metadata']['mode'];
-        $server = $base['data']['segments'][1]['metadata']['cluster'];
-    break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
 }
