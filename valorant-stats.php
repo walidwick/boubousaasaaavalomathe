@@ -513,7 +513,7 @@ switch ($request)
         $map = $base['data'][0]['metadata']['map'];
         $gamemode = $base['data'][0]['metadata']['mode'];
         $server = $base['data'][0]['metadata']['cluster'];
-        echo "Gamemode: ".$gamemode." \ Server: ".$server." \ Map: ".$map." \ MMR changement: ".$lg."";
+        echo "Gamemode: ".$gamemode." | Server: ".$server." | Map: ".$map." | MMR changement: ".$lg."";
     break;
     case "gameresult":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
