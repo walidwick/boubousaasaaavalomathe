@@ -457,6 +457,55 @@ switch ($request)
         
         echo "Gamemode: ". $gamemode ." Server: ". $server . ". Red Team Players: ".$player1name."#".$player1tag.", character: ".$player1character. ", rank: ".$player1rank. ", score: ".$player1kills."/".$player1deaths."/".$player1assists.". | ".$player2name."#".$player2tag.", character: ".$player2character. ", rank: ".$player2rank. ", score: ".$player2kills."/".$player2deaths."/".$player2assists.". | ".$player3name."#".$player3tag.", character: ".$player3character. ", rank: ".$player3rank. ", score: ".$player3kills."/".$player3deaths."/".$player3assists.". | ".$player4name."#".$player4tag.", character: ".$player4character. ", rank: ".$player4rank. ", score: ".$player4kills."/".$player4deaths."/".$player4assists.". | ".$player5name."#".$player5tag.", character: ".$player5character. ", rank: ".$player5rank. ", score: ".$player5kills."/".$player5deaths."/".$player5assists." / / / / weee salina";
     break;
+    case "blueteam":
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
+        $gamemode = $base['data'][0]['metadata']['mode'];
+        $server = $base['data'][0]['metadata']['cluster'];
+        
+        $player1name = $base['data'][0]['players']['blue'][0]['name'];
+        $player1tag = $base['data'][0]['players']['blue'][0]['tag'];
+        $player1character = $base['data'][0]['players']['blue'][0]['character'];
+        $player1rank = $base['data'][0]['players']['blue'][0]['currenttier_patched'];
+        $player1kills = $base['data'][0]['players']['blue'][0]['stats']['kills'];
+        $player1deaths = $base['data'][0]['players']['blue'][0]['stats']['deaths'];
+        $player1assists = $base['data'][0]['players']['blue'][0]['stats']['assists'];
+        
+        $player2name = $base['data'][0]['players']['blue'][1]['name'];
+        $player2tag = $base['data'][0]['players']['blue'][1]['tag'];
+        $player2character = $base['data'][0]['players']['blue'][1]['character'];
+        $player2rank = $base['data'][0]['players']['blue'][1]['currenttier_patched'];
+        $player2kills = $base['data'][0]['players']['blue'][1]['stats']['kills'];
+        $player2deaths = $base['data'][0]['players']['blue'][1]['stats']['deaths'];
+        $player2assists = $base['data'][0]['players']['blue'][1]['stats']['assists'];
+        
+        $player3name = $base['data'][0]['players']['blue'][2]['name'];
+        $player3tag = $base['data'][0]['players']['blue'][2]['tag'];
+        $player3character = $base['data'][0]['players']['blue'][2]['character'];
+        $player3rank = $base['data'][0]['players']['blue'][2]['currenttier_patched'];
+        $player3kills = $base['data'][0]['players']['blue'][2]['stats']['kills'];
+        $player3deaths = $base['data'][0]['players']['blue'][2]['stats']['deaths'];
+        $player3assists = $base['data'][0]['players']['blue'][2]['stats']['assists'];
+        
+        $player4name = $base['data'][0]['players']['blue'][3]['name'];
+        $player4tag = $base['data'][0]['players']['blue'][3]['tag'];
+        $player4character = $base['data'][0]['players']['blue'][3]['character'];
+        $player4rank = $base['data'][0]['players']['blue'][3]['currenttier_patched'];
+        $player4kills = $base['data'][0]['players']['blue'][3]['stats']['kills'];
+        $player4deaths = $base['data'][0]['players']['blue'][3]['stats']['deaths'];
+        $player4assists = $base['data'][0]['players']['blue'][3]['stats']['assists'];
+        
+        $player5name = $base['data'][0]['players']['blue'][4]['name'];
+        $player5tag = $base['data'][0]['players']['blue'][4]['tag'];
+        $player5character = $base['data'][0]['players']['blue'][4]['character'];
+        $player5rank = $base['data'][0]['players']['blue'][4]['currenttier_patched'];
+        $player5kills = $base['data'][0]['players']['blue'][4]['stats']['kills'];
+        $player5deaths = $base['data'][0]['players']['blue'][4]['stats']['deaths'];
+        $player5assists = $base['data'][0]['players']['blue'][4]['stats']['assists'];
+        
+        
+        
+        echo "Gamemode: ". $gamemode ." Server: ". $server . ". Blue Team Players: ".$player1name."#".$player1tag.", character: ".$player1character. ", rank: ".$player1rank. ", score: ".$player1kills."/".$player1deaths."/".$player1assists.". | ".$player2name."#".$player2tag.", character: ".$player2character. ", rank: ".$player2rank. ", score: ".$player2kills."/".$player2deaths."/".$player2assists.". | ".$player3name."#".$player3tag.", character: ".$player3character. ", rank: ".$player3rank. ", score: ".$player3kills."/".$player3deaths."/".$player3assists.". | ".$player4name."#".$player4tag.", character: ".$player4character. ", rank: ".$player4rank. ", score: ".$player4kills."/".$player4deaths."/".$player4assists.". | ".$player5name."#".$player5tag.", character: ".$player5character. ", rank: ".$player5rank. ", score: ".$player5kills."/".$player5deaths."/".$player5assists." / / / / weee salina";
+    break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
 }
