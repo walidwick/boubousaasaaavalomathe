@@ -510,10 +510,10 @@ switch ($request)
     case "gameresult":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
         
-        $tier = $base['data']['ranking_in_tier'];
-        $rank = $base['data']['currenttierpatched'];
+        $redteamscore = $base['data'][0]['teams']['red']['rounds_won'];
+        $blueteamscore = $base['data'][0]['teams']['blue']['rounds_won'];
         
-    echo "Main account Rank: ". $rank. " / Tier: ". $tier. "";
+    echo "Game Score: Blue Team ".$blueteamscore. " | ".$redteamscore. " Red Team";
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
