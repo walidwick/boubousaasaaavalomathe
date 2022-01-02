@@ -521,7 +521,7 @@ switch ($request)
         $redteamscore = $base['data'][0]['teams']['red']['rounds_won'];
         $blueteamscore = $base['data'][0]['teams']['blue']['rounds_won'];
         
-        echo "Game Score: Blue Team ".$blueteamscore. " | ".$redteamscore. " Red Team";
+        echo "Game results: Blue Team ".$blueteamscore. " | ".$redteamscore. " Red Team";
     break;
     default:
         echo "fin ghadi a dak rass l 9alwa xDD";
