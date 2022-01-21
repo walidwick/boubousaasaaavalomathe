@@ -25,7 +25,7 @@ switch ($request)
         $rank = $base['data']['currenttierpatched'];
         $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
 
-        echo "". $rank." ". $tier."/100 (smurf acc)";
+        echo "". $rank.", ". $tier."/100 (smurf acc)";
     break;
     case "minirank":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/9567');
