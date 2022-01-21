@@ -18,21 +18,20 @@ switch ($request)
     // tal gheda
     case "rank":
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/9567');
         $base2 = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
         $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
 
-        echo "". $rank." ". $tier."RR | #". $top." EU ";
+        echo "". $rank." ". $tier."/100 (smurf acc)";
     break;
     case "minirank":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
-        $base3 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/frax');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/9567');
+        
         $rank = $base['data']['currenttierpatched'];
-        $srank = $base3['data']['currenttierpatched'];
-    echo "Rank: ". $rank. ". Subscribe for details ;)";
+    echo "Smurf acc rank: ". $rank. ". Subscribe for details ;)";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
