@@ -119,7 +119,7 @@ switch ($request)
         $aces = $base['data']['segments'][7]['stats']['aces']['displayValue'];
         $timeplayed = $base['data']['segments'][7]['stats']['timePlayed']['displayValue'];
 
-        echo "Time Played: ". $timeplayed. " | Matches Played: ". $matchesplayed. " [(". $matcheswon."W-". $matcheslose."L), Win%: ". $win. "] ";
+        echo "Time Played: ". $timeplayed. " | Matches Played: ". $matchesplayed. " [(". $matcheswon."W-". $matcheslose."L), Win%: ". $win. "] | Total Kills: ". $kills. " (". $HS. " HS) | First Bloods: ". $firstBloods." (". $firstBloodspermatch. " per match) | Clutches: ". $clutches. " |  Aces: ". $aces. " ";
     break;
     case "killjoy":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
