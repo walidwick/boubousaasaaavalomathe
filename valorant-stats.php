@@ -34,6 +34,11 @@ switch ($request)
         $srank = $base3['data']['currenttierpatched'];
     echo "Rank: ". $rank. ". Subscribe for details ;)";
     break;
+    case "leaderboard":
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v2/leaderboard/eu');
+        $l = $base['players']['PlayerCardID']['4ca63988-4ca6-2911-a1b5-98a4b765dffd']['leaderboardRank'];
+    echo "Rank: ". $l. ". Subscribe for details ;)";
+    break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
         
