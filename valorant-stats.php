@@ -23,7 +23,7 @@ switch ($request)
 
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
-        $top = $base2['data']['segments'][0]['stats']['rank']['rank'];
+        $top = $base2['data']['segments[0]'['stats']['rank']['rank'];
 
         echo "". $rank." ". $tier."RR | #". $top." EU ";
     break;
