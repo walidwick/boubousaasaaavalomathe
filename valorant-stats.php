@@ -18,7 +18,7 @@ switch ($request)
     // tal gheda
     case "rank":
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/fezzex/1337');
         $basel = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
         $tier = $base['data']['ranking_in_tier'];
@@ -28,7 +28,7 @@ switch ($request)
         echo "Mathematicien's current rank is ". $rank." ". $tier."RR | He is top";
     break;
     case "minirank":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/fezzex/1337');
         $base3 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/frax');
         $rank = $base['data']['currenttierpatched'];
         $srank = $base3['data']['currenttierpatched'];
