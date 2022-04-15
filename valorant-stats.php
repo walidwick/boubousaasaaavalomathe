@@ -353,18 +353,18 @@ switch ($request)
     case "jett":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
 
-        $matchesplayed = $base['data']['segments'][21]['stats']['matchesPlayed']['displayValue'];
-        $matcheswon = $base['data']['segments'][21]['stats']['matchesWon']['displayValue'];
-        $matcheslose = $base['data']['segments'][21]['stats']['matchesLost']['displayValue'];
-        $win = $base['data']['segments'][21]['stats']['matchesWinPct']['displayValue'];
+        $matchesplayed = $base['data']['segments'][10]['stats']['matchesPlayed']['displayValue'];
+        $matcheswon = $base['data']['segments'][10]['stats']['matchesWon']['displayValue'];
+        $matcheslose = $base['data']['segments'][10]['stats']['matchesLost']['displayValue'];
+        $win = $base['data']['segments'][10]['stats']['matchesWinPct']['displayValue'];
         
-        $kills = $base['data']['segments'][21]['stats']['kills']['displayValue'];
-        $HS = $base['data']['segments'][21]['stats']['headshots']['displayValue'];
-        $firstBloods = $base['data']['segments'][21]['stats']['firstBloods']['displayValue'];
-        $firstBloodspermatch = $base['data']['segments'][21]['stats']['firstBloodsPerMatch']['displayValue'];
-        $clutches = $base['data']['segments'][21]['stats']['clutches']['displayValue'];
-        $aces = $base['data']['segments'][21]['stats']['aces']['displayValue'];
-        $timeplayed = $base['data']['segments'][21]['stats']['timePlayed']['displayValue'];
+        $kills = $base['data']['segments'][10]['stats']['kills']['displayValue'];
+        $HS = $base['data']['segments'][10]['stats']['headshots']['displayValue'];
+        $firstBloods = $base['data']['segments'][10]['stats']['firstBloods']['displayValue'];
+        $firstBloodspermatch = $base['data']['segments'][10]['stats']['firstBloodsPerMatch']['displayValue'];
+        $clutches = $base['data']['segments'][10]['stats']['clutches']['displayValue'];
+        $aces = $base['data']['segments'][10]['stats']['aces']['displayValue'];
+        $timeplayed = $base['data']['segments'][10]['stats']['timePlayed']['displayValue'];
 
         echo "Time Played: ". $timeplayed. " | Matches Played: ". $matchesplayed. " [(". $matcheswon."W-". $matcheslose."L), Win%: ". $win. "] | Total Kills: ". $kills. " (". $HS. " HS) | First Bloods: ". $firstBloods." (". $firstBloodspermatch. " per match) | Clutches: ". $clutches. " |  Aces: ". $aces. " ";
     break;
