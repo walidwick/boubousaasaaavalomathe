@@ -351,7 +351,7 @@ switch ($request)
         echo "Time Played: ". $timeplayed. " | Matches Played: ". $matchesplayed. " [(". $matcheswon."W-". $matcheslose."L), Win%: ". $win. "] | Total Kills: ". $kills. " (". $HS. " HS) | First Bloods: ". $firstBloods." (". $firstBloodspermatch. " per match) | Clutches: ". $clutches. " |  Aces: ". $aces. " ";
     break;
     case "jett":
-        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
+        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%23frax');
 
         $matchesplayed = $base['data']['segments'][10]['stats']['matchesPlayed']['displayValue'];
         $matcheswon = $base['data']['segments'][10]['stats']['matchesWon']['displayValue'];
