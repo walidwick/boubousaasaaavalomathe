@@ -8,7 +8,7 @@ if (!$request)
     echo '\'&command=\' parameter not defined! (Options: \'rank\', \'stats\')';
     return;
 };
-// test hh
+// test hhd
 
 
 $riotid = $player . '%23' . $tag;
