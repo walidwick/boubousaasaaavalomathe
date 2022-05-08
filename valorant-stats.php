@@ -8,7 +8,7 @@ if (!$request)
     echo '\'&command=\' parameter not defined! (Options: \'rank\', \'stats\')';
     return;
 };
-// test hhd
+// test hhddddd
 
 
 $riotid = $player . '%23' . $tag;
@@ -23,7 +23,7 @@ switch ($request)
         $tier = $base['data']['ranking_in_tier'];
         $rank = $base['data']['currenttierpatched'];
 
-        echo "Mathematicien's current rank is ". $rank." ". $tier."RR (new account)";
+        echo "Mathematicien's current rank is ". $rank." ". $tier."RR";
     break;
     case "minirank":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
