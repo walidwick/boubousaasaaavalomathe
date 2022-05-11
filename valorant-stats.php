@@ -503,7 +503,7 @@ switch ($request)
     break;
     case "gameinfos":
         $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
-        $base2 = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/mathematicien/1687');
+        $base2 = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/fae583c4-c8d4-54ee-ae01-2b0c084865df');
 
         $lg = $base2['data']['mmr_change_to_last_game'];
 
