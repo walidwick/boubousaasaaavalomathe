@@ -18,18 +18,24 @@ switch ($request)
     // tal gheda
     case "rank":
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
+        $baseeu = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/frax');
+        $basena = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/na/mathematicien/las9');
 
-        $tier = $base['data']['ranking_in_tier'];
-        $rank = $base['data']['currenttierpatched'];
+        $tiereu = $baseeu['data']['ranking_in_tier'];
+        $rankeu = $baseeu['data']['currenttierpatched'];
+        
+        $tierna = $basena['data']['ranking_in_tier'];
+        $rankna = $basena['data']['currenttierpatched'];
 
-        echo "Mathematicien's current rank is ". $rank." ". $tier."RR";
+        echo "Mathematicien's current in NA server: ". $rankna." ". $tierna."RR, EU server: ". $rankeu." ". $tiereu."RR";
     break;
     case "minirank":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/1687');
-
-        $rank = $base['data']['currenttierpatched'];
-    echo "Rank: ". $rank. ". Subscribe for details ;)";
+        $baseeu = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/frax');
+        $basena = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/na/mathematicien/las9');
+        
+        $rankeu = $baseeu['data']['currenttierpatched'];
+        $rankna = $basena['data']['currenttierpatched'];
+    echo "NA rank: ". $rankna. " |EU rank: "$rankeu ". Subscribe for details ;)";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
