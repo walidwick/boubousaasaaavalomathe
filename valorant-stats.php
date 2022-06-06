@@ -35,7 +35,7 @@ switch ($request)
         
         $rankeu = $baseeu['data']['currenttierpatched'];
         $rankna = $basena['data']['currenttierpatched'];
-    echo "NA rank: ". $rankna. " |EU rank: "$rankeu ". Subscribe for details ;)";
+    echo "NA rank: ". $rankna. " |EU rank: ".$rankeu. ". Subscribe for details ;)";
     break;
     case "timeplayed":
         $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
