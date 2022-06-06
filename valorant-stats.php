@@ -27,7 +27,7 @@ switch ($request)
         $tierna = $basena['data']['ranking_in_tier'];
         $rankna = $basena['data']['currenttierpatched'];
 
-        echo "Mathematicien's current in NA server: ". $rankna." ". $tierna."RR| EU server: ". $rankeu." ". $tiereu."RR";
+        echo "Mathematicien's current rank in NA server: ". $rankna." ". $tierna."RR| EU server: ". $rankeu." ". $tiereu."RR";
     break;
     case "minirank":
         $baseeu = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/frax');
