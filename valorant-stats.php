@@ -519,7 +519,7 @@ switch ($request)
         echo "Gamemode: ".$gamemode." | Server: ".$server." | Map: ".$map." | MMR change: ".$lg."";
     break;
     case "gameresult":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/na/0c188f85-f188-5c60-a3aa-3a1a59928494');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
         
         $redteamscore = $base['data'][0]['teams']['red']['rounds_won'];
         $blueteamscore = $base['data'][0]['teams']['blue']['rounds_won'];
