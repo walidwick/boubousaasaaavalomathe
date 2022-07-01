@@ -508,11 +508,14 @@ switch ($request)
         echo "Blue Team Players: ".$player1name."#".$player1tag.", character: ".$player1character. ", rank: ".$player1rank. ", score: ".$player1kills."/".$player1deaths."/".$player1assists." | ".$player2name."#".$player2tag.", character: ".$player2character. ", rank: ".$player2rank. ", score: ".$player2kills."/".$player2deaths."/".$player2assists." | ".$player3name."#".$player3tag.", character: ".$player3character. ", rank: ".$player3rank. ", score: ".$player3kills."/".$player3deaths."/".$player3assists." | ".$player4name."#".$player4tag.", character: ".$player4character. ", rank: ".$player4rank. ", score: ".$player4kills."/".$player4deaths."/".$player4assists." | ".$player5name."#".$player5tag.", character: ".$player5character. ", rank: ".$player5rank. ", score: ".$player5kills."/".$player5deaths."/".$player5assists." ";
     break;
     case "gameinfos":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
-        $base2 = _getJSON('https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/na/a96c09fd-88c6-5e0c-a9e7-019e90c6bd49');
+        $base2 = _getJSON('https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr/na/a96c09fd-88c6-5e0c-a9e7-019e90c6bd49');
 
         //$base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/na/a96c09fd-88c6-5e0c-a9e7-019e90c6bd49');
         //$base2 = _getJSON('https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr/na/a96c09fd-88c6-5e0c-a9e7-019e90c6bd49');
+        
+        //$base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
+        //$base2 = _getJSON('https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
         
         $lg = $base2['data']['mmr_change_to_last_game'];
 
@@ -522,8 +525,8 @@ switch ($request)
         echo "Gamemode: ".$gamemode." | Server: ".$server." | Map: ".$map." | MMR change: ".$lg."";
     break;
     case "gameresult":
-        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
-        
+        $base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/na/a96c09fd-88c6-5e0c-a9e7-019e90c6bd49');
+        //$base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/eu/882a4c1c-fc72-521b-904e-8bcec9726d5d');
         //$base = _getJSON('https://api.henrikdev.xyz/valorant/v3/by-puuid/matches/na/a96c09fd-88c6-5e0c-a9e7-019e90c6bd49');
         
         $redteamscore = $base['data'][0]['teams']['red']['rounds_won'];
