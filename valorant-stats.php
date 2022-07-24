@@ -19,7 +19,7 @@ switch ($request)
     case "rank":
         //        $base = _getJSON('https://api.tracker.gg/api/v2/valorant/standard/profile/riot/mathematicien%231687');
         $baseeu = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/frax');
-        $basena = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/na/mathematicien/000')
+        $basena = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/na/mathematicien/000');
 
         $tiereu = $baseeu['data']['ranking_in_tier'];
         $rankeu = $baseeu['data']['currenttierpatched'];
@@ -31,7 +31,7 @@ switch ($request)
     break;
     case "minirank":
         $baseeu = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/eu/Mathematicien/frax');
-        $basena = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/na/mathematicien/000')
+        $basena = _getJSON('https://api.henrikdev.xyz/valorant/v1/mmr/na/mathematicien/000');
         
         $rankeu = $baseeu['data']['currenttierpatched'];
         $rankna = $basena['data']['currenttierpatched'];
